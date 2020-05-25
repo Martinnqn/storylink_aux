@@ -1,0 +1,499 @@
+#display-pub-detail {
+    overflow-x: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 1s ease-in-out;
+    display: none;
+    position: fixed;
+    background: #314455F1;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-animation: opactiyTransition 0.3s ease-in 1 normal;
+    -moz-animation: opactiyTransition 0.3s ease-in 1 normal;
+    animation: opactiyTransition 0.3s ease-in 1 normal;
+}
+
+
+@-webkit-keyframes opactiyTransition {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 0.9;
+  }
+}
+
+#theater-header{
+    height: 35px;
+    width: 100%;
+    position: fixed;
+    background: black;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif, sans-serif, "Sans-Pro-Regular","Helvetica Neue",Helvetica,Arial;
+}
+
+.publication-node {
+    -webkit-animation: opactiyTransition 0.3s ease-in 1 normal;
+    -moz-animation: opactiyTransition 0.3s ease-in 1 normal;
+    animation: opactiyTransition 0.3s ease-in 1 normal;
+    padding-top: 40px;
+}
+
+#theater-main {
+    display: flex;
+    overflow-x: scroll;
+    background: #eee;
+    height: 100%;
+    margin:auto;
+}
+
+#theater-view-template{
+    display: none;
+}
+
+.theater-view {
+    max-width: 80%;
+    width: 80%;
+    min-width: 80%;
+    margin: auto;
+}
+
+
+.limit-publication {
+    border-top: 1px solid #cacaca;
+    padding: 5px;
+    overflow:hidden;
+}
+
+.content-card {
+    background: white;
+    position: static;
+}
+
+.publication-header{
+    overflow-y: hidden;
+}
+
+.menu-pub{
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: all 0.5s ease-out;
+    width: 25px;
+    background: #314455FF;
+    height: 25px;
+    border-right: 1px solid black;
+    color: white;
+    margin-left: -25px;
+}
+
+.menu-pub .material-icons{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: white;
+}
+
+.menu-pub:hover .pub-data-init{
+    display: inline-flex;
+}
+
+.menu-pub:hover{
+    width: auto;
+    height: 50%;
+    word-wrap: anywhere;
+}
+
+.menu-pub:hover .material-icons{
+    display: none;
+}
+
+.pub-data-init {
+    display: none;
+    transform: translate(0,-50%);
+    top: 50%;
+    position: relative;
+}
+
+.pub-data-init a{
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.header-image{
+    max-width: 420px;
+}
+
+.img-autor-mini{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    border-width: 5px;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: white;
+}
+
+.publication-container {
+    font-family: "Sans-Pro-Regular","Helvetica Neue",Helvetica,Arial,sans-serif, sans-serif;
+    position: inherit;
+    color: black;
+}
+
+.publication-container a{
+    font-family: "Sans-Pro-Regular","Helvetica Neue",Helvetica,Arial,sans-serif, sans-serif;
+}
+
+
+.body-publication {
+    padding-bottom: 10px;
+}
+
+.publication-content {
+    color: rgb(57, 57, 57);
+    font-size: 16px;
+    height: 270px;
+    overflow-y: scroll;
+    word-break: break-all;
+}
+
+.publication-content p{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.publication-description {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.card-options{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+
+.tags-story span {
+    font-size: 11px;
+    font-weight: bold;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 15px;
+    margin: 3px;
+    display: inline-block;
+    background: #eaeaea;
+}
+
+
+.displacement-menu {
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.title-pub-detail {
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+#unsubscribe-story {
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 2px;
+}
+
+#unsubscribe-story:hover{
+    background: #4e5d6a;
+}
+
+#unsubscribe-story:hover {
+    background: #4d4d4d;
+}
+
+#subscribe-story {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.title-theater-view {
+    color: black;
+    text-align: center;
+}
+
+.scroll-previews-container {
+    padding: 5px;
+}
+
+.scroll-previews-container .card-story {
+  -webkit-overflow-scrolling: touch;
+}
+
+.publication-container {
+    transition: all 0.5s ease-out;
+    border-radius: 25px;
+}
+
+
+.content-previews {
+    height: 540px;
+    position: static;
+}
+
+.content-previews .title-center{
+    color: rgb(111,111,111);
+}
+
+.create-continuation {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.create-continuation a{
+    display: inline-flex;
+}
+
+/*Color de fondo del modal en mode-read*/
+#story-read-mode {
+    background: black;
+}
+
+#title-read-mode {
+    text-align: center;
+    margin: auto;
+    font-family: 'Sans-Pro-Regular';
+}
+
+#story-read-mode .modal-header .close {
+    margin: 0;
+}
+
+.content-read-mode {
+    padding: 8px;
+    line-height: 24px;
+    font-family: 'Sans-Pro-Regular';
+    font-size: 18px;
+}
+
+#story-read-mode .modal-dialog {
+    max-width: 100%;
+}
+
+#story-read-mode .modal-footer {
+    justify-content: center;
+}
+
+.btn-close {
+    padding: 2px;
+    color: white;
+    display: flex;
+    min-width: max-content;
+}
+
+.btn-close:hover {
+    color: white;
+    background: #4d4d4d;
+}
+
+/*dropwdown menu opciones del modo theater*/
+/* Style The Dropdown Button */
+.dropbtn {
+  color: black;
+  padding: 1px;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dropbtn .material-icons {
+    vertical-align: middle;
+}
+
+.dropdown .material-icons {
+    font-size: 28px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    border: 1px solid black;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #97a9bd
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block !important;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #97a9bd;
+}
+
+
+/*Previsualizacion de chapters*/
+.header-mini-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-mini-card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chapter-preview .card-story {
+    max-height: 200px;
+    overflow-y: hidden;
+}
+.chapter-preview .tags-story {
+    margin-top: 25px;
+}
+
+#display-pub-detail .tags-story{
+    height: 26px;
+    overflow-y: hidden;
+}
+#display-pub-detail .tags-story span{
+    margin: 1px;
+    padding: 2px;
+    color: #040404CC;
+}
+
+.highlight {
+    box-shadow: 0px 0px 1px 3px #326B9D9C;
+}
+
+#modal-delete ul{
+    list-style: initial;
+}
+
+.like .material-icons{
+    vertical-align: text-bottom;
+}
+
+.like .cant-likes{
+    color: #a6a6a6;
+}
+
+.btn-liked {
+    color: #ff6567;
+}
+
+@media (min-width: 992px) {
+     .publication-container {
+        max-height: 450px;
+    }
+
+    .content-previews {
+        height: 500px;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .content-pub {
+    }
+
+/*Previsualizacion de chapters*/
+    .scroll-previews-container {
+        display: block;
+        overflow-y: scroll;
+        height: 400px;
+    }
+
+
+    .scroll-previews-container .card-story .img-autor-mini{
+        width: 40px;
+        height: 40px;
+    }
+
+    .scroll-previews-container .card-story .content-story {
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+    .modal-content {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    #theater-body {
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-close {
+    }
+
+    .content-pub{
+        margin-top: 35px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-previews {
+        height: auto;
+        padding: 5px;
+    }
+
+    .chapter-preview{
+        padding: 5px;
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+    }
+
+    .chapter-preview .card-story {
+        min-width: 310px;
+        width: 310px;
+        margin-left: 10px;
+    }
+
+    #theater-main {
+        display: block;
+        overflow-x: hidden;
+        padding: 0;
+    }
+
+    .theater-view {
+        min-width: 100%;
+    }
+
+    .publication-node {
+        padding: 0;
+    }
+
+}

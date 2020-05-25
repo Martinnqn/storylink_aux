@@ -1,0 +1,314 @@
+/*BASE CSS*/
+body {
+    background-color: #ececec;
+    overflow-x: hidden;
+    margin: 0;
+    text-rendering: optimizelegibility;
+}
+
+body a, label, p, span{
+    font-family: 'Sans-Pro-Regular';
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+#primary-navbar{
+    padding: 0;
+}
+
+.input-search {
+    margin: auto;
+}
+
+.nav-hall {
+    margin: auto;
+}
+
+#header-base .nav-hall{
+    color:#ff6567;
+    padding: 0px;
+    font-size: 40px;
+    font-family: 'Dancing Script';
+}
+
+.nav-hall:hover{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    /*text-shadow: 4px -4px 7px #ff6567;
+    text-shadow: -4px 4px 7px #ff6567;
+    text-shadow: -4px 4px 7px #ff6567;*/
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6;
+  }
+}
+
+.title-center{
+    text-align: center;
+}
+
+#collapsibleNavbarPrimary{
+    width: 100%;
+}
+
+#collapsibleNavbarPrimary .material-icons {
+    font-size: 18px;
+}
+
+.btn-custom-1 {
+    display: block;
+}
+
+.btn-custom-2 {
+    padding: 4px;
+    font-size: 16px;
+    /*background: #883d69;*/
+    background: #ff6567;
+    color: white;
+    border-radius: 16px;
+    border:none;
+}
+
+.btn-custom-2:hover {
+    box-shadow: -0px 0px 6px #ff6567;
+}
+
+.btn-custom-2 a{
+    color: white;
+}
+
+.btn-custom-2:hover a{
+    color: white;
+}
+
+#logo {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.nav-img-perfil{
+    height: 30px;
+    width: 30px;
+}
+
+#search-nav {
+    justify-content: center;
+}
+
+#login-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#login-div a{
+    margin-left: 5px; 
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    border-left: 1px solid;
+    border-color: #4e5d6a;
+}
+
+#login-div a:hover{
+    background: #4e5d6a;
+}
+
+#login-nav {
+    margin: 0px;
+}
+
+#login-nav li{
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+#header-base {
+    display: flex;
+    background-color: #314455;
+}
+
+#header-base a{
+    color: white;
+}
+
+#users-found {
+    position: absolute;
+    background: white;
+    box-shadow: 0px 6px 6px rgb(111,111,111);
+    border-radius: 0 0px 10px 10px;
+    z-index: 20;
+    width: 100%;
+}
+
+#users-found a{
+    color: black;
+    height: 30px;
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+
+@font-face { font-family: 'Dancing Script'; font-style: normal; font-weight: 400; src: url('../../fonts/dancing-script-v14-latin/dancing-script-v14-latin-regular.woff') format('woff')}
+@font-face { font-family: 'Dancing Script'; font-style: normal; font-weight: 500; src: url('../../fonts/dancing-script-v14-latin/dancing-script-v14-latin-500.woff') format('woff')}
+@font-face { font-family: 'Dancing Script'; font-style: normal; font-weight: 600; src: url('../../fonts/dancing-script-v14-latin/dancing-script-v14-latin-600.woff') format('woff')}
+@font-face { font-family: 'Dancing Script'; font-style: normal; font-weight: 700; src: url('../../fonts/dancing-script-v14-latin/dancing-script-v14-latin-700.woff') format('woff')}
+@font-face { font-family: 'avenir-book'; font-style: normal; font-weight: 200; src: url('../../fonts/avenir/AvenirLTStd-Book.otf')}
+@font-face { font-family: 'avenir-medium'; font-style: normal; font-weight: 700; src: url('../../fonts/avenir/AvenirLTStd-Medium.otf')}
+@font-face { font-family: 'avenir-roman'; font-style: normal; font-weight: 500; src: url('../../fonts/avenir/AvenirLTStd-Roman.otf')}
+@font-face { font-family: 'Sans-Pro-SemiBold'; src: url('../../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf')}
+@font-face { font-family: 'Sans-Pro-Regular'; src: url('../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf')}
+
+#img-portada{
+    margin-top: 25px;
+    width: 320px;
+}
+
+#footer{
+    width: 100%;
+    background: black;
+    padding: 5px;
+    color: rgb(111,111,111);
+    font-size: 16px;
+}
+
+#footer > div{
+    justify-content: space-between;
+}
+
+#data-contact{
+    list-style: none;
+    display: flex;
+    align-self: center;
+    margin: 0;
+}
+
+
+#footer #storylink-pin{
+    height: 35px;
+}
+
+
+.cookies {
+    width: 100%;
+    background: #314455;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.cookies__texto {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.cookies__boton--si {
+    padding: 4px;
+    font-size: 16px;
+    background: #4794e6;;
+    color: white;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+
+#users-found {
+    top: 38px;
+}
+
+.list-users-found li{
+    padding-left: 10px;
+    display: grid;
+}
+
+.list-users-found li:hover{
+    background: aliceblue;
+}
+
+.list-users-found hr {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.color-pub ul li{
+    display: inline-grid;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.color-pub input[type=radio]{
+    height: 5px;
+}
+
+.palette-color-pub {
+    width:25px;
+    height:25px;
+    display:inline-block;
+    border-radius: 12px;
+}
+
+input[type=file] {
+    padding: 2px;
+}
+
+
+label[for=id_opened] {
+    display: inline-flex;
+}
+
+#id_opened {
+    display: inline;
+    width: auto;
+    vertical-align: middle;
+}
+
+/*para el CustomImageField*/
+.img-preview {
+    width: 100px;
+    max-height: 100px;
+}
+
+@media(min-width:992px) {
+
+
+    #base-div{
+        min-height: 600px;
+    }
+
+}
+
+
+
+
+@media(max-width:992px) {
+    
+
+}
+
+
+@media(max-width:575px) {
+    #base-div{
+        min-height: 500px;
+    }
+
+}
+

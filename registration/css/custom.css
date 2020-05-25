@@ -1,0 +1,295 @@
+body {
+    overflow-x: hidden;
+}
+
+#header-base {
+    transition: top 0.3s;
+}
+
+.msg-create-acc {
+    color: white;
+    display: inline;
+}
+
+.msg-create-acc a {
+    cursor: pointer;
+}
+
+.social-login{
+    margin: auto;
+    display: grid;
+    width: 80%;
+}
+
+.social-login a{
+    margin-top: 10px;
+}
+
+.btn-facebook {
+  background: #3B5998;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #263961; 
+}
+
+#primary-navbar .btn-facebook{
+    font-size: 16px;
+    min-width: max-content;
+    margin: auto;
+}
+
+.btn-facebook:active, .btn-facebook:hover {
+  background: #263961;
+  color: #fff;
+}
+
+.btn-twitter {
+  background: #1DA1F2;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #263961; 
+}
+
+#primary-navbar .btn-twitter{
+    font-size: 16px;
+    min-width: max-content;
+    margin: auto;
+}
+
+.btn-twitter:active, .btn-twitter:hover {
+  background: #53baec;
+  color: #fff;
+}
+
+#title-welcome .arrow{
+    font-size: 45px;
+    position: absolute;
+    margin-top: 25px;
+    display: block;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-animation: to-back-arrow 1s ease-in-out infinite alternate;
+    -moz-animation: to-back-arrow 1s ease-in-out infinite alternate;
+    animation: to-back-arrow 1s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes to-back-arrow {
+  from {
+    margin-top: 25px;
+  }
+  
+  to {
+    margin-top: 45px;
+  }
+}
+
+.m-welcome {
+}
+
+#welcome-img {
+    width: 150px;
+}
+
+#welcome-img-2 {
+    width: 150px;
+    margin-left: 200px;
+}
+
+.has-account .text-muted {
+    color: #acabab !important;
+}
+
+/*.has-account .alert {
+    position: absolute;
+    margin-top: 100px;
+}*/
+
+#primary-navbar .btn-custom-2 {
+    font-size: 15px;
+    border:none;
+    margin:auto;
+}
+
+
+
+.to {
+    margin-top: 30px;    
+}
+
+.separate .o {
+    position: relative;
+    background: moccasin;
+    padding: 4px;
+}
+
+.separate .horizontal-separate {
+    margin-top: -10px;
+}
+
+strong.hall{
+    font-family: 'Dancing Script';
+    font-size: 30px;
+    color: #ff6567;
+}
+
+#email-required {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    background: white;
+}
+
+.email-required-form {
+    width: 30%;
+    margin: auto;
+    display: none;
+}
+
+#container-form-create-account{
+    width: 30%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: whitesmoke;
+}
+
+#container-form-login h3 {
+    text-align: center;
+}
+
+#container-form-login{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: whitesmoke;
+    width: 300px;
+}
+
+#presentation {
+    text-align: center;
+}
+
+#img-portada {
+    width: 100%;
+    height: auto;
+    margin-top: 45px;
+    margin-bottom: 5px;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+section .a-scroll{
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+p strong {
+    font-size: 22px;
+}
+
+.section-light {
+background: moccasin;
+}
+
+.section-dark {
+    background: #31445571;
+}
+
+#presentation .tell-more {
+    -webkit-animation: glowBox 1s ease-in-out infinite alternate;
+    -moz-animation: glowBox 1s ease-in-out infinite alternate;
+    animation: glowBox 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowBox {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #314455, 0 0 40px #314455, 0 0 50px #314455, 0 0 60px #314455;
+  }
+  
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff6567, 0 0 40px #ff6567, 0 0 50px #ff6567, 0 0 60px #ff6567;
+  }
+}
+
+.tell-more {
+    width: 60px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.img-esferas {
+    width: 600px;
+    height: auto;
+}
+
+
+.section-link {
+    height: 100vh;
+    width: 3px;
+    background: black;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 180px;
+}
+
+.target-link {
+    margin-top: -10px;
+    position: absolute;
+}
+
+.paragraph-presentation{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.a-create-acc {
+    font-size: 22px;
+}
+
+@media(max-width:900px) {
+    #container-form-create-account{
+        width: 50%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        background: whitesmoke;
+    }
+
+    .email-required-form{
+        width: 60%;
+    }
+}
+
+
+@media(max-width:572px) {
+    #container-form-create-account{
+        width: 90%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        background: whitesmoke;
+    }
+    .img-esferas {
+        width: 300px;
+        height: auto;
+    }
+    .email-required-form {
+        width: 90%;
+    }
+
+    .social-login a{
+        width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+
